@@ -1,2 +1,2 @@
-# Walleo
+# Z wallet
  A  cryptocurrency wallet.
