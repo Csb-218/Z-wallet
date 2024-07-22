@@ -30,7 +30,7 @@ const Home = () => {
                     <span>Create Wallet</span>
                 </button>
 
-                <button className="inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide transition duration-300 rounded focus-visible:outline-none justify-self-center whitespace-nowrap bg-purple-50 text-purple-500 hover:bg-purple-100 hover:text-purple-600 focus:bg-purple-200 focus:text-purple-700 disabled:cursor-not-allowed disabled:border-purple-300 disabled:bg-purple-100 disabled:text-purple-400 disabled:shadow-none"
+                <button className="inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide transition duration-300 rounded focus-visible:outline-none justify-self-center whitespace-nowrap bg-zinc-900 text-purple-500  hover:text-purple-300 focus:bg-purple-200 focus:text-purple-700 disabled:cursor-not-allowed disabled:border-purple-300 disabled:bg-purple-100 disabled:text-purple-400 disabled:shadow-none"
                 onClick={()=>navigate('/recover')}
                 >
                     <span>Sign In with a seed phrase</span>
