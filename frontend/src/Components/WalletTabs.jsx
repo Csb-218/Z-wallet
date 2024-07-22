@@ -72,9 +72,9 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
         >
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-indigo-50 hover:stroke-indigo-600 focus:bg-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 1
-                  ? "border-indigo-500 stroke-indigo-500 text-indigo-500 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
-                  : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-indigo-500 hover:text-indigo-500 focus:border-indigo-600 focus:stroke-indigo-600 focus:text-indigo-600 disabled:text-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200 text-indigo-50  focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 1
+                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-600  hover:text-indigo-400 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-400 disabled:border-slate-500"
+                  : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-1a"
               role="tab"
@@ -91,9 +91,9 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
           </li>
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-indigo-50 hover:stroke-indigo-600 focus:bg-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 2
-                  ? "border-indigo-500 stroke-indigo-500 text-indigo-500 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
-                  : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-indigo-500 hover:text-indigo-500 focus:border-indigo-600 focus:stroke-indigo-600 focus:text-indigo-600 disabled:text-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200 text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 2
+                  ? "border-indigo-500 stroke-indigo-00 text-indigo-50 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
+                  : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-2a"
               role="tab"
@@ -110,9 +110,9 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
           </li>
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:bg-indigo-50 hover:stroke-indigo-600 focus:bg-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 3
-                  ? "border-indigo-500 stroke-indigo-500 text-indigo-500 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
-                  : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-indigo-500 hover:text-indigo-500 focus:border-indigo-600 focus:stroke-indigo-600 focus:text-indigo-600 disabled:text-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200  text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 3
+                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
+                  : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-3a"
               role="tab"

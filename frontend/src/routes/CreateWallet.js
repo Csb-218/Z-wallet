@@ -23,8 +23,8 @@ const CreateWallet = () => {
     function setWalletAndMneumonic(){
 
         const login_info={
-            wallet : newSeedPhrase,
-            seedPhrase : ethers.Wallet.fromPhrase(newSeedPhrase).address
+            wallet : ethers.Wallet.fromPhrase(newSeedPhrase).address,
+            seedPhrase : newSeedPhrase,
         }
 
         dispatch(userActions.login(login_info))
@@ -44,7 +44,7 @@ const CreateWallet = () => {
             <div className='flex flex-col gap-y-2 absolute bottom-10 w-full'>
                 {/* Component: Base primary basic button */}
                 <button 
-                className="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none"
+                className="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-indigo-500 hover:bg-indigo-600 focus:bg-indigo-700 disabled:cursor-not-allowed disabled:border-indigo-300 disabled:bg-indigo-300 disabled:shadow-none"
                 onClick={generateWallet}
                 >
                     <span>Generate seed phrase</span>
@@ -55,7 +55,7 @@ const CreateWallet = () => {
                 {/* Component: Base outline basic button  */}
                 <button 
                 disabled={!newSeedPhrase}
-                className="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide transition duration-300 border rounded focus-visible:outline-none whitespace-nowrap border-emerald-500 text-emerald-500 hover:border-emerald-600 hover:text-emerald-600 focus:border-emerald-700 focus:text-emerald-700 disabled:cursor-not-allowed disabled:border-emerald-300 disabled:text-emerald-300 disabled:shadow-none"
+                className="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide transition duration-300 border rounded focus-visible:outline-none whitespace-nowrap border-indigo-500 text-indigo-500 hover:border-indigo-600 hover:text-indigo-600 focus:border-indigo-700 focus:text-indigo-700 disabled:cursor-not-allowed disabled:border-indigo-300 disabled:text-indigo-300 disabled:shadow-none"
                 onClick={setWalletAndMneumonic}
                 >
                     <span>Open your new wallet</span>

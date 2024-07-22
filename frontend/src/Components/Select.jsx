@@ -19,18 +19,18 @@ export default function Select() {
   return (
     <>
       {/*<!-- Component: Rounded base basic select --> */}
-      <div className="relative my-6 md:w-60">
+      <div className="relative my-6 ">
         <div className="relative">
-          <div className="inline-flex items-center overflow-hidden rounded-md border bg-white">
+          <div className="inline-flex items-center overflow-hidden rounded-md border bg-transparent">
             <div
               
-              className="border-e px-4 py-2 text-sm/none text-gray-600 hover:bg-gray-50 hover:text-gray-700"
+              className="border-e px-4 py-2 text-sm/none text-gray-100 "
             >
               {selectedChain?.label}
             </div>
 
             <button 
-            className="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700"
+            className="h-full p-2 text-gray-100  "
             onClick={()=>setOpen(!open)}
             >
               <span className="sr-only">Menu</span>
@@ -50,7 +50,7 @@ export default function Select() {
           </div>
 
           <div
-            className={`absolute end-0 z-10 mt-2 w-56 rounded-md border border-gray-100 bg-white shadow-lg ${open?"":'hidden'}`}
+            className={`absolute end-0 z-10 mt-2 w-56 rounded-md border border-gray-100 bg-zinc-900 shadow-lg ${open?"":'hidden'}`}
             role="menu"
           >
             <div className="p-2">
@@ -58,7 +58,7 @@ export default function Select() {
                 return(
                   <div
                   key={index}
-                  className="block text-left rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                  className="block text-left rounded-lg px-4 py-2 text-sm text-gray-100 hover:bg-gray-50 hover:text-gray-700"
                   role="menuitem"
                   onClick={()=>handleSelection(chain)}
 

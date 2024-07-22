@@ -37,17 +37,17 @@ const WalletView = () => {
    
 
     return (
-        <div className='relative '>
+        <div className='relative h-5/6'>
             <div className='flex flex-col'>
               <img src={logo} className='h-16' alt=""/>
             <p className='text-xl'>Wallet</p>
-            {
-                `${wallet?.slice(0, 4)}...${wallet?.slice(38, 42)}`
-            }  
+            <p>
+               {`${wallet?.slice(0, 4)}...${wallet?.slice(38, 42)}`}   
+            </p>
             </div>
             
             <button
-                className="absolute right-0 top-0 inline-flex items-center justify-center h-8 gap-2 px-4 text-xs font-medium tracking-wide transition duration-300 rounded-full focus-visible:outline-none justify-self-center whitespace-nowrap bg-indigo-50 text-indigo-500 hover:bg-indigo-100 hover:text-indigo-600 focus:bg-indigo-200 focus:text-indigo-700 disabled:cursor-not-allowed disabled:border-indigo-300 disabled:bg-indigo-100 disabled:text-indigo-400 disabled:shadow-none"
+                className="absolute right-0 top-0 inline-flex items-center justify-center h-8 gap-2 px-4 text-xs font-medium tracking-wide transition duration-300 rounded-full focus-visible:outline-none justify-self-center whitespace-nowrap bg-indigo-300 text-indigo-500 hover:bg-indigo-200 hover:text-indigo-600 focus:bg-indigo-200 focus:text-indigo-700 disabled:cursor-not-allowed disabled:border-indigo-300 disabled:bg-indigo-100 disabled:text-indigo-400 disabled:shadow-none"
                 onClick={Logout}
             >
                 <span>

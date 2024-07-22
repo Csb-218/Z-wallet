@@ -3,22 +3,39 @@
   "name": "Z wallet",
   "version":"1.0.0",
   "description":" A crypto wallet",
-  "manifest_version":3,
-  "action":{
-    "default_popup":"index.html",
-    "default_title":"Z-wallet"
-  },
-  "icons": {
-     "16" : "logo.svg",
-      "24" : "logo.svg",
-      "32" : "logo.svg",
-      "64" : "logo.svg",
-      "128" : "logo.svg",
-      "192" : "logo.svg",
-      "512" : "logo.svg"
-  },
-  "permissions" : [
-    "storage"
-  ]
+ 
+  "icons": [
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "96x96"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/"
  
 }

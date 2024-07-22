@@ -6,7 +6,7 @@ const Tokens = ({ tokens }) => {
         <>
            
             {/* Component: Two Lines List With Trailing Text And Leading Image  */}
-            <ul className="divide-y divide-slate-100">
+            <ul className="divide-y divide-slate-100 text-white">
                 {
                     tokens?.map((token,index) => {
                         return (
@@ -17,12 +17,12 @@ const Tokens = ({ tokens }) => {
                                 </div>
 
                                 <div className="flex flex-col gap-0 min-h-[2rem] items-start justify-center flex-1 min-w-0">
-                                    <h4 className="w-full text-base truncate text-slate-700">{token?.symbol}</h4>
-                                    <p className="w-full text-sm truncate text-slate-500">{token?.name}</p>
+                                    <h4 className="w-full text-base truncate ">{token?.symbol}</h4>
+                                    <p className="w-full text-sm truncate ">{token?.name}</p>
                                 </div>
-                                <div className="text-xs text-slate-800 w-20  text-wrap ">
+                                <div className="text-xs  w-20  text-wrap ">
                                     <p>{Number(token?.balance)/10 ** Number(token?.decimals)}</p>
-                                    <p>Tokens</p>
+                                    <p>Token</p>
                                 </div>
                             </li>
                         )
