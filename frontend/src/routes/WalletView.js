@@ -37,7 +37,7 @@ const WalletView = () => {
    
 
     return (
-        <div className='relative h-5/6'>
+        <div className='relative  text-center h-5/6'>
             <div className='flex flex-col'>
               <img src={logo} className='h-16' alt=""/>
             <p className='text-xl'>Wallet</p>

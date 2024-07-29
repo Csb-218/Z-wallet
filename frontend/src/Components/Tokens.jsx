@@ -6,11 +6,11 @@ const Tokens = ({ tokens }) => {
         <>
            
             {/* Component: Two Lines List With Trailing Text And Leading Image  */}
-            <ul className="divide-y divide-slate-100 text-white">
+            <ul className="divide-y divide-slate-100 text-white  w-full">
                 {
                     tokens?.map((token,index) => {
                         return (
-                            <li key={index} className="flex items-center gap-4 px-4 py-3">
+                            <li key={index} className="flex items-center gap-10 px-4 py-3">
 
                                 <div className="flex items-center self-center shrink-0">
                                     <img src={token?.logo || coin } alt="token logo" className="w-12 rounded" />

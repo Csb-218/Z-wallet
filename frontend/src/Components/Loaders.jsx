@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Loaders = () => {
   return (
-    <section className="bg-white py-20 dark:bg-dark">
+    <section className=" py-20 dark:bg-dark">
       <div className="container flex justify-center">
 
          

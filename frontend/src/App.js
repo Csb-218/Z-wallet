@@ -45,7 +45,7 @@ function App() {
 
 
   return (
-    <div className="App ">
+    <div className=" lg:h-[45rem] lg:w-3/12 lg:absolute lg:left-[37.5%] lg:top-[2rem] h-screen">
 
       <div
         className="w-full h-full duration-500 group overflow-hidden relative rounded bg-neutral-800 text-neutral-50 p-4 flex flex-col justify-evenly"

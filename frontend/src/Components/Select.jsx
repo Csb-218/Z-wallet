@@ -24,7 +24,7 @@ export default function Select() {
           <div className="inline-flex items-center overflow-hidden rounded-md border bg-transparent">
             <div
               
-              className="border-e px-4 py-2 text-sm/none text-gray-100 "
+              className=" px-1 py-2 text-sm/none text-gray-100 "
             >
               {selectedChain?.label}
             </div>
@@ -33,7 +33,7 @@ export default function Select() {
             className="h-full p-2 text-gray-100  "
             onClick={()=>setOpen(!open)}
             >
-              <span className="sr-only">Menu</span>
+              {/* <span className="sr-only">Menu</span> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4"
@@ -50,7 +50,7 @@ export default function Select() {
           </div>
 
           <div
-            className={`absolute end-0 z-10 mt-2 w-56 rounded-md border border-gray-100 bg-zinc-900 shadow-lg ${open?"":'hidden'}`}
+            className={`absolute end-0 z-10 mt-2 w-56 rounded-md border  backdrop-blur-lg shadow-lg ${open?"":'hidden'}`}
             role="menu"
           >
             <div className="p-2">

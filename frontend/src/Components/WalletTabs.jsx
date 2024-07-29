@@ -64,7 +64,7 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
   return (
     <>
       {/*<!-- Component: Basic lg sized tab full width --> */}
-      <section className="max-w-full" >
+      <section className="max-w-full text-center" >
         <ul
           className="flex items-center border-b border-slate-200"
           role="tablist"
@@ -72,8 +72,8 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
         >
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200 text-indigo-50  focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 1
-                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-600  hover:text-indigo-400 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-400 disabled:border-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-0 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-000 focus:text-indigo-200 text-indigo-50  focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 1
+                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-000  hover:text-indigo-400 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-400 disabled:border-slate-500"
                   : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-1a"
@@ -91,8 +91,8 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
           </li>
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200 text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 2
-                  ? "border-indigo-500 stroke-indigo-00 text-indigo-50 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-0 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-000 focus:text-indigo-200 text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 2
+                  ? "border-indigo-500 stroke-indigo-00 text-indigo-50 hover:border-indigo-000  hover:text-indigo-000 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
                   : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-2a"
@@ -110,8 +110,8 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
           </li>
           <li className="flex-1" role="presentation ">
             <button
-              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-6 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-600 focus:text-indigo-200  text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 3
-                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-600  hover:text-indigo-600 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
+              className={`-mb-px inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-0 text-sm font-medium tracking-wide transition duration-300 hover:text-indigo-400 hover:stroke-indigo-000 focus:text-indigo-200  text-indigo-50 focus-visible:outline-none disabled:cursor-not-allowed ${tabSelected.currentTab === 3
+                  ? "border-indigo-500 stroke-indigo-500 text-indigo-50 hover:border-indigo-000  hover:text-indigo-000 focus:border-indigo-700 focus:stroke-indigo-700 focus:text-indigo-700 disabled:border-slate-500"
                   : "justify-self-center border-transparent stroke-slate-700 text-slate-100 hover:border-indigo-500 hover:text-indigo-400 focus:border-indigo-400 focus:stroke-indigo-400 focus:text-indigo-400 disabled:text-slate-500"
                 }`}
               id="tab-label-3a"
@@ -130,7 +130,7 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
         </ul>
         <div className="">
           <div
-            className={`px-6 py-4 ${tabSelected.currentTab === 1 ? "" : "hidden"
+            className={`px-0 py-4 ${tabSelected.currentTab === 1 ? "" : "hidden"
               }`}
             id="tab-panel-1a"
             aria-hidden={`${tabSelected.currentTab === 1 ? "true" : "false"}`}
@@ -157,7 +157,7 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
             }
           </div>
           <div
-            className={`px-6 py-4 ${tabSelected.currentTab === 2 ? "" : "hidden"
+            className={`px-0 py-4 ${tabSelected.currentTab === 2 ? "" : "hidden"
               }`}
             id="tab-panel-2a"
             aria-hidden={`${tabSelected.currentTab === 2 ? "true" : "false"}`}
@@ -182,7 +182,7 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
             }
           </div>
           <div
-            className={`px-6 py-4 ${tabSelected.currentTab === 3 ? "" : "hidden"
+            className={`px-0 py-4 ${tabSelected.currentTab === 3 ? "" : "hidden"
               }`}
             id="tab-panel-3a"
             aria-hidden={`${tabSelected.currentTab === 3 ? "true" : "false"}`}

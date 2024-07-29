@@ -64,10 +64,10 @@ const CreateWallet = () => {
             </div>
 
 
-            <footer className="w-full border-2 absolute bottom-0">
+            <footer className="w-full  absolute bottom-0 text-center cursor-pointer text-sm">
                 {/*       Main footer */}
 
-                <p onClick={() => navigate('/')}>Back Home</p>
+                <p onClick={() => navigate('/')}> ⃪ Back Home</p>
             </footer>
 
         </div>
