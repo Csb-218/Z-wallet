@@ -82,7 +82,7 @@ export default function TabsLgBasicFullWidth({ tokens, nfts, balance,transfers, 
               aria-posinset="1"
               tabIndex={`${tabSelected.currentTab === 1 ? "0" : "-1"}`}
               aria-controls="tab-panel-1a"
-              aria-selected={`${tabSelected.currentTab === 1 ? "true" : "false"
+              ariaSelected={`${tabSelected.currentTab === 1 ? "true" : "false"
                 }`}
               onClick={() => setTabSelected({ ...tabSelected, currentTab: 1 })}
             >
