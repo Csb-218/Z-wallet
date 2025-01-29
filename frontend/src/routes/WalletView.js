@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import { userActions } from '../store/UserSlice';
@@ -8,44 +8,64 @@ import { GetWallet } from '../Services/service';
 import { logo } from '../Assets';
 
 const WalletView = () => {
-    
+
     const navigate = useNavigate()
     const wallet = useSelector(state => state.user.wallet)
     const seedPhrase = useSelector(state => state.user.seedPhrase)
     const selectedChain = useSelector(state => state.chain.selectedChain)
+    const [copySuccess, setCopySuccess] = useState(false);
 
     const dispatch = useDispatch();
 
-    const { data, isPending , mutate } = useMutation({
+    const { data, isPending, mutate } = useMutation({
         mutationKey: 'wallet',
         mutationFn: () => GetWallet(wallet, selectedChain?.value),
         retry: 3,
-       
+
     })
 
     function Logout() {
         dispatch(userActions.logout())
-        navigate('/',{replace: true})
+        navigate('/', { replace: true })
     }
 
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(wallet).then(() => {
+            setCopySuccess(true);
+            setTimeout(() => setCopySuccess(''), 2000);
+        }, () => {
+            setCopySuccess(false);
+        });
+    };
 
 
     useEffect(() => {
         selectedChain && seedPhrase && mutate()
     }, [selectedChain, mutate, seedPhrase])
 
-   
+
 
     return (
         <div className='relative  text-center h-5/6'>
             <div className='flex flex-col'>
-              <img src={logo} className='h-16' alt=""/>
-            <p className='text-xl'>Wallet</p>
-            <p>
-               {`${wallet?.slice(0, 4)}...${wallet?.slice(38, 42)}`}   
-            </p>
+                <img src={logo} className='h-16' alt="" />
+                <p className='text-xl'>Wallet</p>
+
+               <span className='flex justify-center space-x-2'>
+                 <p className="hover:">
+                    {`${wallet?.slice(0, 4)}...${wallet?.slice(38, 42)}`}
+                </p>
+                <button
+                    className="opacity-50 hover:opacity-100"
+                    onClick={copyToClipboard}
+                >
+                    📋
+                </button>
+                
+               </span>
+               {copySuccess && <span className="text-indigo-400">{"copied"}</span>}
             </div>
-            
+
             <button
                 className="absolute right-0 top-0 inline-flex items-center justify-center h-8 gap-2 px-4 text-xs font-medium tracking-wide transition duration-300 rounded-full focus-visible:outline-none justify-self-center whitespace-nowrap bg-indigo-300 text-indigo-500 hover:bg-indigo-200 hover:text-indigo-600 focus:bg-indigo-200 focus:text-indigo-700 disabled:cursor-not-allowed disabled:border-indigo-300 disabled:bg-indigo-100 disabled:text-indigo-400 disabled:shadow-none"
                 onClick={Logout}
